@@ -66,7 +66,7 @@
 ┃           ┗─ 📄 CommonActions.pkg.bytes
 ┣━ 📂 AssetRefs
 ┃   ┗━ 📂 Hero
-┃     ┗─ 📄 {hero}_AssetRefs.bytes
+┃     ┗─ 📄 {hero_id}_AssetRefs.bytes
 ┃
 ┣━ 📂 Databin
 ┃   ┗━ 📂 Client
