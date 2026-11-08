@@ -108,7 +108,7 @@ Remove the mod before playing. If you play during 04:00 - 05:00, the "Network Er
 
 <div align="center">
 
-<img src="[https://kommodo.ai/i/snbatTOqXp8QDhNzlM4u](https://kommodo.ai/i/bZLhCtRy9Z7VqmX4Z5bv)" alt="Example of an unresolved issue" width="60%">
+<img src="https://plain-apac-prod-public.komododecks.com/202611/08/bZLhCtRy9Z7VqmX4Z5bv/image.jpg" alt="Example of an unresolved issue" width="60%">
 
 <sub>(Unresolved issue)</sub>
 
