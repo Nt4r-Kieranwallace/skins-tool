@@ -108,7 +108,7 @@ Remove the mod before playing. If you play during 04:00 - 05:00, the "Network Er
 
 <div align="center">
 
-<img src="https://drive.google.com/file/d/11_JKA9qu5uHbjpy_hajclrouPjknw7x1/view?usp=drivesdk" alt="Example of an unresolved issue" width="60%">
+<img src="https://kommodo.ai/i/snbatTOqXp8QDhNzlM4u" alt="Example of an unresolved issue" width="60%">
 
 <sub>(Unresolved issue)</sub>
 
