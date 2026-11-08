@@ -64,6 +64,9 @@
 ┃       ┗━ 📂 Prefab_Hero
 ┃           ┣─ 📄 Actor_{hero_id}_Actions.pkg.bytes
 ┃           ┗─ 📄 CommonActions.pkg.bytes
+┣━ 📂 AssetRefs
+┃   ┗━ 📂 Hero
+┃     ┗─ 📄 {hero}_AssetRefs.bytes
 ┃
 ┣━ 📂 Databin
 ┃   ┗━ 📂 Client
