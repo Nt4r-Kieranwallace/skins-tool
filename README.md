@@ -44,7 +44,7 @@
 ### 🛠️ Download the Script
 
 > [!IMPORTANT]
-> - path: [script](https://github.com/Kieranwallace-design/skins-data.py)
+> - path: [script](https://github.com/Nt4r-Kieranwallace/skins-tool)
 > - Make sure the files you want to work with actually exist, and that the script runner is compatible with its paired files.
 > - Check that your original `Resources` folder is truly the original, unmodified version.
 > - If you are not sure, use `Restore Original Game Data` in the game, re-download `Resources`, and then run `Mod_Tools.py`.
