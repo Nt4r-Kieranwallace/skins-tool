@@ -2,7 +2,7 @@
 
 <img src="https://cdn.phototourl.com/member/2026-11-08-34e6d0c3-2b8f-4ef6-8e77-b114a387fad1.jpg" alt="skins-data.py" width="100%">
 
-# skins - tool
+# skins - data.py
 
 <p>An executable file for modifying <i><a href="https://en.wikipedia.org/wiki/Arena_of_Valor">Arena of Valor</a></i> game files, allowing users to create in-game skins for your favorite heroes.</p>
 
@@ -108,7 +108,7 @@ Remove the mod before playing. If you play during 04:00 - 05:00, the "Network Er
 
 <div align="center">
 
-<img src="https://kommodo.ai/i/YLOqIJSmmdfY0ladSGfC" alt="Example of an unresolved issue" width="60%">
+<img src="assets/network-error.jpg" alt="Example of an unresolved issue" width="60%">
 
 <sub>(Unresolved issue)</sub>
 
