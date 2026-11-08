@@ -51,6 +51,40 @@
 
 ---
 
+### 🗂️ Structure - Repository Folders
+
+> [!NOTE]
+> What each folder in this repository is used for.
+
+```
+📦 skins-tool/
+┃
+┣━ 📂 skins
+┃   ┗─ 🖼️ {files_name}.jpg
+┃
+┣━ 📂 Tasks
+┃   ┗─ 🖼️ {files_name}.jpg
+┃
+┣━ 📂 Resources
+┃   ┗━ 📂 (sub-folders)
+┃       ┣─ 📄 {files_name}.bytes
+┃       ┗─ 📄 {files_name}.pkg.bytes
+┃
+┗━ 📂 Ready_made_skins
+    ┣─ 🎬 {files_name}.mp4
+    ┗━ 📂 copyright
+        ┗─ 📄 support.xml
+```
+
+| Folder | Accepts |
+| --- | --- |
+| `skins` | `{files_name}.jpg` |
+| `Tasks` | `{files_name}.jpg` |
+| `Resources` | Sub-folders with `{files_name}.bytes` and `{files_name}.pkg.bytes` |
+| `Ready_made_skins` | `{files_name}.mp4` and `copyright/support.xml` |
+
+---
+
 ### 📂 Structure - Data in the folder [Resources]
 
 > [!NOTE]
@@ -64,9 +98,10 @@
 ┃       ┗━ 📂 Prefab_Hero
 ┃           ┣─ 📄 Actor_{hero_id}_Actions.pkg.bytes
 ┃           ┗─ 📄 CommonActions.pkg.bytes
+┃
 ┣━ 📂 AssetRefs
 ┃   ┗━ 📂 Hero
-┃     ┗─ 📄 {hero_id}_AssetRefs.bytes
+┃       ┗─ 📄 {hero_id}_AssetRefs.bytes
 ┃
 ┣━ 📂 Databin
 ┃   ┗━ 📂 Client
@@ -124,6 +159,13 @@ Remove the mod before playing. If you play during 04:00 - 05:00, the "Network Er
 1. **In-game data** - There may be a bug or glitch that causes disconnections during play (for example, one team exploiting a bug).
 2. **Incorrect internal skin data edits** - The data was not edited or checked thoroughly, so a "Network Error" slips in, or the data is outdated and has not been updated carefully.
 3. **Incorrect file edits in folders** - `Ages` `AssetRefs` `Databin` `Model`
+
+---
+
+### 💬 Support & Community
+
+- **Discord:** [Join the server](https://discord.gg/hBuFGEu8uv)
+- **Author:** nt4r
 
 ---
 
