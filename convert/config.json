@@ -1,0 +1,8 @@
+{
+  "color": true,
+  "delete_failed": true,
+  "delete_empty_folders": true,
+  "keep_other_files_in_pkg": false,
+  "bytes_dir": "output_bytes",
+  "xml_dir": "output_xml"
+}
