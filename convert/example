@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BytesXmlConverterGuide>
+    <Title>Bytes to XML / XML to Bytes Converter</Title>
+    <Runner>
+        <FileName>main.py</FileName>
+        <Type>Source Code</Type>
+        <Language>Python</Language>
+    </Runner>
+    <Description>
+        A conversion utility for converting binary data files (Bytes) into XML format and converting XML files back into Bytes format.
+    </Description>
+    <Features>
+        <Feature name="BytesToXML">
+            <Description>Convert binary data files (.bytes) into XML files (.xml).</Description>
+            <InputFormat>.bytes</InputFormat>
+            <OutputFormat>.xml</OutputFormat>
+        </Feature>
+        <Feature name="XMLToBytes">
+            <Description>Convert XML files (.xml) back into binary data files (.bytes).</Description>
+            <InputFormat>.xml</InputFormat>
+            <OutputFormat>.bytes</OutputFormat>
+        </Feature>
+        <Feature name="FolderProcessing">
+            <Description>Supports individual files and folders containing multiple files.</Description>
+        </Feature>
+    </Features>
+    <DirectorySetup>
+        <Directory name="output_bytes">
+            <Purpose>Input directory for binary data files.</Purpose>
+            <Instructions>
+                <Step>1. Place individual .bytes files into this directory.</Step>
+                <Step>2. Alternatively, place folders containing .bytes files into this directory.</Step>
+                <Step>3. Preserve the original folder structure.</Step>
+            </Instructions>
+        </Directory>
+        <Directory name="output_xml">
+            <Purpose>Output directory for converted XML files.</Purpose>
+            <Instructions>
+                <Step>1. The program saves converted XML files in this directory.</Step>
+                <Step>2. Retrieve the converted files from this directory after processing.</Step>
+            </Instructions>
+        </Directory>
+    </DirectorySetup>
+    <ConversionProcess>
+        <BytesToXML>
+            <Step>1. Place .bytes files or folders containing binary files into output_bytes.</Step>
+            <Step>2. Run main.py.</Step>
+            <Step>3. The program scans output_bytes for supported files.</Step>
+            <Step>4. Binary data is converted into XML format.</Step>
+            <Step>5. Retrieve the converted XML files from output_xml.</Step>
+        </BytesToXML>
+        <XMLToBytes>
+            <Step>1. Provide XML files to the converter's configured XML input location.</Step>
+            <Step>2. Run the XML-to-Bytes conversion function in main.py.</Step>
+            <Step>3. The program converts XML data back into Bytes format.</Step>
+            <Step>4. Retrieve the resulting .bytes files from the configured output directory.</Step>
+        </XMLToBytes>
+    </ConversionProcess>
+    <InstallationGuide>
+        <Step>1. Install Python on your device.</Step>
+        <Step>2. Prepare the Python environment.</Step>
+        <Step>3. Install the required Python dependencies specified by the source code.</Step>
+        <Step>4. Place main.py in the working directory.</Step>
+        <Step>5. Create output_bytes and output_xml directories.</Step>
+        <Step>6. Verify the directory structure.</Step>
+        <Step>7. Run main.py using Python.</Step>
+    </InstallationGuide>
+    <DirectoryStructure>
+        <Folder name="Converter">
+            <File>main.py</File>
+            <Folder name="output_bytes"/>
+            <Folder name="output_xml"/>
+        </Folder>
+    </DirectoryStructure>
+    <Important>
+        The converter must use a compatible binary-to-XML parser and XML-to-binary serializer. XML files must retain the required structure and data types to allow reverse conversion.
+    </Important>
+</BytesXmlConverterGuide>
