@@ -58,11 +58,42 @@
         </Examples>
         <Purpose>This folder is used to receive and organize skin images according to their skin IDs.</Purpose>
     </Section>
+    <ErrorHandling>
+        <Description>The script automatically generates an error log when an error occurs during execution.</Description>
+        <ErrorLog>
+            <FileName>horizon_error.log</FileName>
+            <Purpose>Stores error details and diagnostic information for troubleshooting.</Purpose>
+            <Behavior>Create the log file when an error occurs.</Behavior>
+        </ErrorLog>
+        <Success>
+            <Condition>Execution completes successfully without errors.</Condition>
+            <Behavior>No error log is generated.</Behavior>
+        </Success>
+    </ErrorHandling>
+    <ZipOutput>
+        <Description>Output ZIP files are automatically named according to the number of skin images processed.</Description>
+        <SingleFile>
+            <Condition>Exactly one skin image is processed.</Condition>
+            <Input>{skin_id}.jpg or {skin_id}.png</Input>
+            <Output>{files_name_jpg}.zip</Output>
+            <Example>
+                <Input>15009.jpg</Input>
+                <Output>15009.zip</Output>
+            </Example>
+        </SingleFile>
+        <MultipleFiles>
+            <Condition>More than one skin image is processed.</Condition>
+            <Output>Mod_{...}_Skin(s).zip</Output>
+            <Behavior>Generate a combined ZIP archive instead of creating separate ZIP files for each image.</Behavior>
+        </MultipleFiles>
+    </ZipOutput>
     <Execution>
         <Step>1. Verify that the Resources folder has been created.</Step>
         <Step>2. Verify that Ages, AssetRefs, Databin and Prefab_Characters are inside Resources.</Step>
         <Step>3. Verify that the original game resources are in their correct directories.</Step>
         <Step>4. Verify that the Tasks folder is ready to receive skin images.</Step>
         <Step>5. Run Mod_Tool3.9.py using Python.</Step>
+        <Step>6. Check the generated ZIP archive after processing.</Step>
+        <Step>7. If an error occurs, check horizon_error.log for diagnostic information.</Step>
     </Execution>
 </SetupGuide>
