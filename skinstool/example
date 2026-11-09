@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SetupGuide>
+
+    <Title>Mod_Tool3.9.py</Title>
+
+    <Section name="Resources">
+
+        <Description>
+            Create a folder named Resources to store
+            the original game resource files.
+        </Description>
+
+        <Preparation>
+            <Step>1. Create a folder named Resources.</Step>
+            <Step>2. Prepare the original game resource files.</Step>
+            <Step>3. Copy the resource files into Resources.</Step>
+            <Step>4. Ensure that the original directory structure is preserved.</Step>
+            <Step>5. Check that all required resource files are available.</Step>
+        </Preparation>
+
+        <Purpose>
+            This folder serves as the source directory
+            for the original game resources.
+        </Purpose>
+
+    </Section>
+
+    <Section name="Tasks">
+
+        <Description>
+            Create a separate folder named Tasks to receive
+            skin images generated or extracted by the script.
+        </Description>
+
+        <Preparation>
+            <Step>1. Create a folder named Tasks.</Step>
+            <Step>2. Use this folder as the destination for skin images.</Step>
+            <Step>3. Skin images must use the JPG or PNG format.</Step>
+            <Step>4. Each image must be named using its corresponding skin ID.</Step>
+        </Preparation>
+
+        <SupportedFormats>
+            <Format>.jpg</Format>
+            <Format>.png</Format>
+        </SupportedFormats>
+
+        <NamingConvention>
+            <Pattern>{skin_id}.jpg</Pattern>
+            <Pattern>{skin_id}.png</Pattern>
+        </NamingConvention>
+
+        <Examples>
+            <File>15009.jpg</File>
+            <File>15010.png</File>
+            <File>52414.jpg</File>
+            <File>52417.png</File>
+        </Examples>
+
+        <Purpose>
+            This folder is used to receive and organize
+            skin images according to their skin IDs.
+        </Purpose>
+
+    </Section>
+
+    <Execution>
+        <Step>1. Verify that both folders have been created.</Step>
+        <Step>2. Verify that the original game resources are inside Resources.</Step>
+        <Step>3. Verify that Tasks is ready to receive skin images.</Step>
+        <Step>4. Run Mod_Tool3.9.py using Python.</Step>
+    </Execution>
+
+</SetupGuide>
