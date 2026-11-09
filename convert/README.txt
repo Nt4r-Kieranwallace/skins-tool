@@ -1,22 +1,45 @@
-R4NT | V1.2.0  -  DEEP SPACE EDITION
+R4NT | V1.2.0 - DEEP SPACE EDITION
 ====================================
-ต้องลง:  pip install zstandard   (Pydroid3: Pip -> zstandard)
 
-โฟลเดอร์ (มีแค่สองอัน สร้างให้เองตอนรันครั้งแรก):
-  output_bytes/   ไฟล์ .bytes / .pkg.bytes
-  output_xml/     ไฟล์ .xml
+Installation:
+Install the required dependency:
+pip install zstandard
 
-เมนู:
-  [1] bytes -> xml   อ่านจาก output_bytes  ผลไป output_xml
-                     (คลายบีบอัด zstd ก่อนแปลง)
-  [2] xml -> bytes   อ่านจาก output_xml    ผลไป output_bytes
-                     (ไม่บีบอัด)
-  สั่งตรงได้:  python main.py decode   |   python main.py encode
+For Pydroid 3:
+Open Pip and install zstandard.
 
-กติกา:
-  - สแกนทุกโฟลเดอร์ย่อย
-  - .pkg.bytes แตก/บีบใน RAM (BytesIO) ชื่อเดิมคงไว้
-  - แปลงได้ = ย้ายไปอีกโฟลเดอร์ / แปลงไม่ได้ = ลบ / โฟลเดอร์ว่าง = ลบ
-  - ตั้งค่าใน config.json
+Directory Structure:
+Only two directories are required. Both are automatically created when the program is run for the first time.
 
-Credit : R4NT | V1.2.0
+output_bytes/
+    Stores .bytes and .pkg.bytes files.
+
+output_xml/
+    Stores .xml files.
+
+Conversion Menu:
+
+[1] Bytes -> XML
+    Input: output_bytes/
+    Output: output_xml/
+    Automatically decompresses Zstandard (ZSTD) data before conversion.
+
+[2] XML -> Bytes
+    Input: output_xml/
+    Output: output_bytes/
+    Converts XML data back into Bytes format without compression.
+
+Command-Line Execution:
+python main.py decode
+python main.py encode
+
+Processing Rules:
+- Recursively scans all subdirectories.
+- Processes .pkg.bytes files entirely in RAM using BytesIO.
+- Preserves original filenames during conversion.
+- Successfully converted files are moved to the destination directory.
+- Files that fail conversion are deleted.
+- Empty directories are automatically removed.
+- Configuration settings are managed through config.json.
+
+Credit: R4NT | V1.2.0
