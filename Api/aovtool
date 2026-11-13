@@ -1,1 +1,2 @@
 
+This script is a data source used only for finding skin icon images. Number 1 is used to search for a single hero image, for example, 15009 = Nakroth Dimension Breaker and 15000 = Hero Nakroth. Number 2 is used to enter multiple heroes, for example, 15009 = count as the 1st hero, 254402 = count as the 2nd hero, and 59901 = count as the 3rd hero. Number 3 is used to find the file in the Databin folder. Find heroSkin.bytes and place it in the heroSkin/heroSkin.bytes folder, then enter Number 3 and wait to receive the skinslist.
